@@ -1,0 +1,29 @@
+[package]
+name = "swaybg-tui"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "Terminal-based wallpaper selector for Wayland with true color image previews"
+license = "MIT"
+repository = "https://github.com/yourusername/swaybg-tui"
+keywords = ["wayland", "wallpaper", "tui", "swaybg", "terminal"]
+categories = ["command-line-utilities"]
+readme = "README.md"
+
+[dependencies]
+anyhow = "1.0"
+crossterm = "0.27"
+ratatui = "0.27"
+walkdir = "2.5"
+globset = "0.4"
+clap = { version = "4.5", features = ["derive"] }
+directories = "5.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+image = { version = "0.25", default-features = false, features = ["png","jpeg","gif","bmp","tiff","webp"] }
+
+[features]
+# Build with --features ascii for image previews, otherwise just file browsing
+ascii = []
+default = ["ascii"]
