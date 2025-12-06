@@ -1,6 +1,6 @@
 # swaybg-tui
 
-A terminal-based wallpaper selector for Wayland environments using swaybg. Navigate directories and browse images with vim-like keybindings. Features high-quality color image previews rendered directly in the terminal using ANSI escape codes and half-block characters.
+A terminal-based wallpaper selector for Wayland environments using swaybg. Navigate directories and browse images with vim-like keybindings. Features pixelly color image previews rendered directly in the terminal using ANSI escape codes and half-block characters.
 
 This is an admittedly vibe-coded tool that I created because I wanted a background switcher that allowed me to actually view images without switching my bg, but felt lo-fi in keeping with the general hyprland aesthetic.
 
